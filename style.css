@@ -1,0 +1,40 @@
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0.5rem;
+}
+
+.functions {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    gap: .5rem;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 100%;
+   
+}
+
+.readout {
+    display: flex;
+    justify-content: end;
+    min-height: 3rem;
+    border: 1px solid black;
+}
+
+.body-wrapper   {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 1rem;
+    min-height: 10rem;
+}
