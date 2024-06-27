@@ -46,7 +46,8 @@ for (let button of buttons) {
  
 
 const giveResult = () => {
-    firstNumber = operate(parseFloat(firstNumber),parseFloat(secondNumber),operator);
+    const calc = operate(parseFloat(firstNumber),parseFloat(secondNumber),operator);
+    firstNumber = calc % 1 !== 0 ? calc.toFixed(2) : calc
     operator = undefined;
     secondNumber = "";
     num2Display.textContent = "";

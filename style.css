@@ -5,14 +5,9 @@
     gap: 0.5rem;
 }
 
-/* {
-    font-size: 1.5rem;
-    border: 0px solid seashell;
-    border-radius: .5em;
-} */
-
 .number-button, .operator  {
     font-size: 1.5rem;
+    background-color: burlywood;
     border: 0.5px solid seashell;
     border-radius: .5em;
     transition: 0.2s all ease-in-out
@@ -21,6 +16,10 @@
 .number-button:hover, .operator:hover {
     border: 0.5px solid black;
     border-radius: .5em;
+}
+
+.operator  {
+    padding: 1rem;
 }
 
 .delete {
@@ -43,6 +42,28 @@
     gap: 0.5rem;
 }
 
+.equals{
+    font-size: 1.5rem;
+    border: 1px solid seashell;
+    border-radius: .5em;
+    padding: 1rem;
+    transition: 0.2s all ease-in-out;
+    background-color: green;
+    color: white;
+}
+
+.equals:hover{
+    background-color: rgba(0,128,0,95%);
+    border: 1px solid black;
+}
+
+.clear{
+    padding: 1rem;
+    background-color: red;
+    border-radius: 1rem;
+    color: white;
+}
+
 .container {
     width: 100%;
     max-width: 900px;
@@ -51,19 +72,21 @@
     gap: .5rem;
     margin: auto auto auto auto;
     justify-content: center;
-    border: 1px solid blue;
+    
 }
 
 .wrapper {
     display: flex;
     flex-direction: column;
+    border-radius: 1em;
+    background-color: #30110157;
     gap: 1.5rem;
     width: 100%;
     max-width: 40rem;
-    height: 70%;
-    border: 1px solid red;
-    padding: 2em;
+    height: 100%;
+    padding: 2rem;
     margin: auto auto;
+    border: 5px solid black;
 }
 
 .readout {
@@ -76,6 +99,8 @@
     min-height: 6rem;
     padding-right: .5rem;
     padding-bottom: 1rem;
+    border-radius:1em;
+    background-color:whitesmoke;
    
 }
 
@@ -95,7 +120,7 @@
 }
 
 section {
-    height: 80vh;
+    height: 100%;
     justify-items: center;
     display: flex;
 }
