@@ -13,9 +13,6 @@ const operatorDisplay = document.getElementById("operatorDiv")
 const sumButton = document.getElementById("equals-button")
 const deleteButton = document.getElementById("delete");
 
-
-
-
 for (let button of buttons) {
     button.addEventListener("click", (e) =>{
         if (operator === undefined) {
@@ -78,11 +75,11 @@ deleteButton.addEventListener("click", () =>{
         }
     } 
     if(operator !== undefined && firstNumber !== ""){
-        secondNumber = secondNumber.slice(0,1)
+        secondNumber = secondNumber.slice(0,-1)
         num2Display.textContent = secondNumber
     }
 
-    if(secondNumber === "" && firstNumber !== ""){
+    if(secondNumber == "" && firstNumber !== ""){
         operator = undefined 
         operatorDisplay.textContent = "";
     }
@@ -98,7 +95,14 @@ function operate(num1,num2,operator){
     } if (operator == "*"){
         return multiply(num1,num2)
     } if (operator == "/"){
+        if (num1 == 0 || num2 == 0){
+            clearDisplay();
+            alert("Nuh Uh cant do that sorry!")
+            firstNumber = ""
+            return
+        } else{
         return divide(num1,num2);
+        }
     }
     if (mum1 !== "" || operator !== undefined || num2 !== ""){
         return

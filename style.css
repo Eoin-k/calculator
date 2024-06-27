@@ -1,8 +1,40 @@
 .buttons {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     gap: 0.5rem;
+}
+
+/* {
+    font-size: 1.5rem;
+    border: 0px solid seashell;
+    border-radius: .5em;
+} */
+
+.number-button, .operator  {
+    font-size: 1.5rem;
+    border: 0.5px solid seashell;
+    border-radius: .5em;
+    transition: 0.2s all ease-in-out
+}
+
+.number-button:hover, .operator:hover {
+    border: 0.5px solid black;
+    border-radius: .5em;
+}
+
+.delete {
+    font-size: 1.5rem;
+    border: 1px solid seashell;
+    border-radius: .5em;
+    transition: 0.2s all ease-in-out;
+    background-color: black;
+    color: white;
+}
+
+.delete:hover{
+    background-color: #00000095;
+    border: 1px solid white;
 }
 
 .functions {
@@ -15,28 +47,55 @@
     width: 100%;
     max-width: 900px;
     display: flex;
+    height: 100%;
     gap: .5rem;
-    margin: auto auto;
+    margin: auto auto auto auto;
+    justify-content: center;
+    border: 1px solid blue;
 }
 
 .wrapper {
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: 1.5rem;
     width: 100%;
-   
+    max-width: 40rem;
+    height: 70%;
+    border: 1px solid red;
+    padding: 2em;
+    margin: auto auto;
 }
 
 .readout {
     display: flex;
     justify-content: end;
+    align-items: center;
     min-height: 3rem;
     border: 1px solid black;
+    font-size: 2.5rem;
+    min-height: 6rem;
+    padding-right: .5rem;
+    padding-bottom: 1rem;
+   
 }
+
+#firstNumberDiv, #operatorDiv, #secondNumberDiv{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
 
 .body-wrapper   {
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 1rem;
     min-height: 10rem;
+    height: 100%;
+}
+
+section {
+    height: 80vh;
+    justify-items: center;
+    display: flex;
 }
