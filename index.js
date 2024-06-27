@@ -28,7 +28,6 @@ for (let button of buttons) {
                 decimal.addEventListener("click", () =>{
                     decimal.disabled = true;
                 })
-                console.log(secondNumber  + " Second");
             }
         })       
 }
@@ -38,7 +37,6 @@ for (let button of buttons) {
         if (operator == undefined){
         operator = button.value ; 
          decimal.disabled = false;
-        console.log(operator)
         operatorDisplay.textContent = operator 
         }
     })
