@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
-    <script src="index.js" deferS></script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -11,9 +11,11 @@
     <section>
         <div class="container">
             <div class="wrapper">
-                <input id="readout" class="readout">
-                    
-                </input>
+                <div id="readout" class="readout">
+                   <div id="firstNumberDiv"></div>
+                   <div id="operatorDiv"></div>
+                   <div id="secondNumberDiv"></div> 
+                </div>
                 <div class="body-wrapper">
                     <div class="buttons">
                     <button class="number-button" value="7">7</button>
@@ -26,20 +28,24 @@
                     <button class="number-button" value="2">2</button>
                     <button class="number-button" value="3">3</button>
                     <button class="number-button" value="0">0</button>
-                    <button  class="decimal-button"value = ".">.</button>
-                    <button class="equals-button" value = "=">=</button>
+                    <button id="decimal-button" class="decimal-button number-button"value = ".">.</button>
+                    <button id="delete" class="delete">Del</button>
+                    
                     </div>
                      <div class="functions">
-                        <button class="clear-button" value="AC">AC</button>
-                    <button class="divide-button" value=" / ">/</button>
-                    <button class="multiply-button" value=" * ">*</button>
-                    <button class="minus-button" value=" - ">-</button>
-                    <button class="plus-button" value=" + ">+</button>
+                        <button id="clear" class="clear" value="AC">AC</button>
+                    <button class="operator" value="/">/</button>
+                    <button class="operator" value="*">*</button>
+                    <button class="operator" value="-">-</button>
+                    <button class="operator" value="+">+</button>
+                    <button id="equals-button" class="equals-button" value = "=">=</button>
+                    
                     
                     </div>
                  </div>
             </div>
         </div>
     </section>
+    <script src="index.js"></script>
 </body>
 </html>
