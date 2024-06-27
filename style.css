@@ -7,7 +7,7 @@
 
 .number-button, .operator  {
     font-size: 1.5rem;
-    background-color: burlywood;
+    background-color: rgb(244, 151, 12);
     border: 0.5px solid seashell;
     border-radius: .5em;
     transition: 0.2s all ease-in-out
@@ -79,7 +79,7 @@
     display: flex;
     flex-direction: column;
     border-radius: 1em;
-    background-color: #30110157;
+    background-color: #24242c;
     gap: 1.5rem;
     width: 100%;
     max-width: 40rem;
